@@ -7,7 +7,7 @@ If not, return the index where it would be if it were inserted in order
 
 function findIndex(array $arr, int $target)
 {
-    if (!in_array($target, $arr)) {
+    if (! in_array($target, $arr)) {
         $arr[] = $target;
         sort($arr);
     }
