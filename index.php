@@ -7,7 +7,7 @@ If not, return the index where it would be if it were inserted in order
 
 function findIndex(array $arr, int $target)
 {
-    if (! in_array($target, $arr)) {
+    if (!in_array($target, $arr)) {
         $arr[] = $target;
         sort($arr);
     }
@@ -17,5 +17,5 @@ function findIndex(array $arr, int $target)
 
 
 // test samples
-echo json_encode(findIndex([1, 2, 6, 3, 4, 5], 1));
-echo json_encode(findIndex([1, 2, 6, 3, 4, 5], 7));
+echo findIndex([1, 2, 6, 3, 4, 5], 1);
+echo findIndex([1, 2, 6, 3, 4, 5], 7);
